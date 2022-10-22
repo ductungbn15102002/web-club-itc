@@ -1,0 +1,757 @@
+@media screen and (min-width:768px)
+{
+  .nav-item {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+  } 
+  .nav-item:last-child {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width:768px)
+{
+  .btn-slide {
+    display: none;
+    
+  }
+  .bc{
+    display:none;
+  }
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff67;
+  
+  
+}
+
+
+nav .active {
+  color: rgb(4, 182, 236);
+  background-color: #25b6ff;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0px;
+  font-weight: 1000;
+  
+}
+.navbar-brand{
+  color: #25b6ff;
+  font-weight: bolder;
+  font-size:26px;
+}
+#navbarNav{
+  
+  margin-top:40px;
+  margin-left:0px;
+}
+     
+
+
+
+
+.menu {
+  
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.menu * {
+  box-sizing: border-box;
+  
+}
+.menu li {
+  
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  overflow: hidden;
+  position: relative;\
+  
+  border-radius: 5px;
+  
+}
+
+.menu li a{
+  font-size:20px;
+  
+}
+.menu li:before,
+.menu li:after {
+  display: block;
+}
+.menu li:before {
+  left: 0%;
+}
+.menu li:after {
+  left: 75%;
+}
+.menu a {    /*  màu và vị trí của tiêu đề trên menu */
+  backface-visibility: hidden;
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.menu a:before {
+  left: 25%;
+}
+.menu a:after {
+  left: 50%;
+}
+.menu a:hover {
+  color: #000000;
+}
+.menu li:before,
+.menu li:after,
+.menu a:before,
+.menu a:after {   /* tốc độ hiển thị của animation mầu trên menu */
+  background-color:#35bcff;
+  position: absolute;
+  width: 26%;
+  top: 50%;
+  bottom: 50%;
+  content: '';
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;    
+  transition: all 0.3s ease;
+}
+.menu li:before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.menu li:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.menu a:before {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+.menu a:after {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.menu li:hover:before,
+.menu li.visited:before,
+.menu li:hover:after,
+.menu li.visited:after,
+.menu li:hover a:before,
+.menu li.visited a:before,
+.menu li:hover a:after,
+.menu li.visited a:after {
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.menu li:hover:before,
+.menu li.visited:before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.menu li:hover:after,
+.menu li.visited:after {
+  -webkit-transition-delay: 0.225s;
+  transition-delay: 0.225s;
+}
+.menu li:hover a:before,
+.menu li.visited a:before {
+  -webkit-transition-delay: 0.075s;
+  transition-delay: 0.075s;
+}
+.menu li:hover a:after,
+.menu li.visited a:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+
+
+
+.bg-grey {   /* CHÀO MỪNG ĐẾN VỚI CÂU LẠC BỘ ITC */
+  background-color: #2dd9ff;  
+}
+
+
+.middle{
+  text-align:center;
+  margin-top:56px;
+
+}
+.title-middle{
+  margin-bottom:19px;
+  font-weight: bold;
+  font-size:24px;
+}
+.title-middle span{
+  color:#000000;
+}
+.slogan-middle{
+  width:498px;
+  font-size:16px;
+  margin-left:300px;
+}
+.col-line{
+    width: 54px;
+    height: 1px;
+    background-color: #00bc95;
+    display: block;
+    margin: 5px 0px;
+}
+.title-service{
+   color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.service{
+     margin:30px 0;
+}
+
+.box-service{
+  text-align:center;
+  width:370px;
+  height:218px;
+}
+.box-service i{
+width:64px;
+height:64px;
+border: 2px solid #3cbcfc;;
+line-height: 64px;
+font-size: 30px;
+text-align: center;
+color: #25b6ff;
+border-radius:10px;
+margin-bottom: 20px;
+}
+.box-service p{
+    line-height: 20px;
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.box-service h4{      /*đổi màu chữ chỗ Chắp cánh ước mơ */
+      color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.box-service:hover i{   /*đổi màu chữ chỗ ITC có gì */
+  transform: rotateY(180deg);
+  transition: 0.7s ease-in-out;
+  color:white;
+  background:#00a2f3;
+}
+.service-part{
+  margin-bottom: 50px;
+}
+
+.title-featured{
+   color: #000;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.featured{
+  margin:30px 0;
+}
+
+
+.box-featured .more{
+  text-align:center;
+  margin:-10px 0;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.box-featured h5{
+  text-align:center;
+  margin:10px;
+  color:rgb(10, 10, 10);
+  font-size:14px;
+  font-weight: 700;
+}
+
+
+.more {
+ text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-top: -11px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.box-featured {
+  position: relative;
+  overflow: hidden;
+}
+.box-featured1 {
+  margin-top: 10px;
+  position: relative;
+  padding:0 15px;
+  overflow: hidden;
+
+}
+.img-overlay{
+ position: absolute;
+ background: #222;
+ width: 100%;
+ display: block;
+ height: 100%;
+ padding: 20px;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+  opacity: 0.8;
+  -webkit-transform:scale(0);
+  transition: 0.3s ease;
+
+}
+.box-featured:hover .img-overlay{
+  transform: scale(1);
+}
+.box-featured1:hover .img-overlay{
+  transform: scale(1);
+}
+.border-custom {
+  border: solid 2px #ddd;
+  border-radius: 4px;
+  max-width: 100%;
+  margin:0;
+
+}
+.text-custom{
+  color: rgb(4, 4, 4);
+  font-size:16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.link-custom{
+  color: #00bc95;
+  font-weight: bold;
+}
+.text-counter{  /* 17 ngành đh chính quy*/
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+.text-counter h1{
+  font-size:36px;
+}
+.zoom {
+  transition: ease 0.3s;
+  max-width: 100%;
+}
+.box-featured:hover .zoom {
+  transform: scale(1.5); 
+}
+.box-featured1:hover .zoom {
+  transform: scale(1.5); 
+}
+.btn-custom{
+  background-color: #0aadff;
+  border: solid 1px #10afff;
+  color: #FFF;
+  font-size: 0.8em;
+  position: relative;
+
+}
+.btn-custom:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(221, 219, 219);
+  border: solid 1px rgb(221, 219, 219);
+}
+
+.title-job{
+   color: #000;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.job{
+  margin-bottom:20px;
+}
+.custom{
+  text-align: left;
+}
+.what-do-inner i{       /*biểu tượng của  phần ITC có gì - phần trc khi ấn vào biểu tượng*/
+      width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #40bfff;
+    color: #0aadff;
+    font-size: 30px;
+}
+
+.what-do-inner:hover i{     /*biểu tượng của  phần ITC có gì - phần sau khi ấn vào biểu tượng*/
+  transform: rotateY(180deg);
+  transition: 0.7s ease-in-out;
+  color:white;
+  background:#10afff;
+}
+
+.what-do-inner span{
+      font-weight: 500;
+    color: #000;
+    font-size: 20px;
+}
+
+.title-team{
+   color: #000;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.team{
+  margin-top:50px;
+  margin-bottom:20px;
+}
+
+.pic{
+  text-align:center;
+}
+.pic h6{
+  margin-top:-16px;
+  margin-bottom:-16px;
+  color:#000000;
+  font-size: 12px;
+}
+.pic h5{
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top:0px;
+  color:rgb(0, 0, 0);
+}
+.pic img{
+  width: 50%;
+
+}
+.pic ul{
+  margin-right:50px;
+}
+
+.pic ul li{
+   display: inline-block;
+   left:20px;
+  line-height: 40px;
+  margin-left: 5px;
+}
+.pic li a i{
+      color: #fff;
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #333b4d;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 10%;
+}
+
+
+.title-stories{
+   color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+}
+.counter {
+  padding: 6rem;
+  border:solid 1px rgb(0, 0, 0);
+}
+
+
+/******************************************latest news and blogs**************************/
+
+.latest-news-wrapper{
+  border: 1px solid #eee;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.latest-news-desc h3{
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color:#000;
+  line-height: 25px;
+}
+
+.l-news-detail{
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.latest-news-wrapper a.img-wrapper{
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 
+}
+ 
+.btn2 p{
+  width:140px;
+  height: 39px;
+  padding:9px 0;
+  text-align:center;
+  border:1px solid #00bc95;
+  background-color: #00bc95;
+  text-transform: uppercase;
+  font-size:12px;
+  font-weight: 600;
+  border-radius:4px;
+}
+
+.btn2 a{
+  color:black;
+  text-decoration: none;
+}
+
+.btn2 a:hover{
+  color:black;
+  text-decoration: none;
+}
+.btn2 p:hover{
+   background-color: lightgray;
+   border:1px solid rgb(12, 12, 12);
+  border-radius:4px;
+}
+.contact-infor{
+  display: block;
+    font-size: 13px;
+    color:white;
+}
+.location h3{
+  font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  padding-top:30px;
+  margin-bottom:30px;
+}
+
+.tweet-desc{
+   display: block;
+    font-size: 13px;
+    color:white;
+}
+
+.follow h3{
+  font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  margin-top:58px;
+}
+
+.follow ul{
+  margin-left:-41px;
+}
+.follow ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+.follow li i{
+
+  color: #fff;
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #333b4d;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 10%;
+}
+
+hr{
+  border-color: rgba(255,255,255,0.5)
+}
+.blue-fluid,
+.footer{
+  background-color: #0c8aff;
+  padding: 10px;
+  width: 100%;
+}
+.footer-btm{
+  background-color: black;
+  height: 110px;
+}
+
+.footer-btm p{
+  line-height: 100px;
+}
+.abc {
+  position: absolute;
+  top: 15vw;
+  color: #FFF;
+  text-align: center;
+
+}
+
+.abc h1 {
+  font-size: 2.8vw;
+  font-weight: bolder;
+}
+
+.abc p {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.night{
+  background-color: #000;
+}
+.carousel-item {
+  opacity: 0.6;
+}
+
+/***********--------------BLOG ---------------------********/
+.breadcrumb{
+  background-color: transparent;
+  color: #fff;
+  margin: 0 !important;
+  padding: 10px 0;
+}
+
+.breadcrumb-item,.breadcrumb-item a{
+  color: #fff;
+}
+.bc {
+  font-size: 14px;
+  margin:0;
+}
+.title h5{
+  color:#fff;
+  font-size:24px;
+  margin:0 !important;
+  text-transform: uppercase
+}
+.box{
+  background-color: #f7f8fa;
+  padding:10px;
+  border:solid 1px #ddd;
+}
+.box .img-box2 {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+ 
+}
+
+.box .img-box{
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+.box h6{
+  font-size:14px;
+  color:#16b1ff;
+  
+}
+.title-search {
+  font-weight: bold;
+  border-bottom:solid 1px #000000;
+  text-transform: uppercase;
+}
+.box .form-control,.btn{
+  border-radius: 0px;
+}
+.desc h2{
+  color: #00bc95;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.box .date{
+  font-size:11px;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+}
+.box-product {
+  margin-top:10px;
+}
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    display: none;
+    background: #13b0ff;
+    text-align: center;
+    z-index: 10000;
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    line-height: 33px;
+}
+
+.back-to-top a{
+  text-decoration:none;
+}
+
+.back-to-top:hover{
+  background-color:#3471ff;
+  text-decoration: none;
+}
+.page-link {
+  color: #00bc95;
+}
+
+
+
+
+
+
+
